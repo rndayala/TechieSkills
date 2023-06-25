@@ -1,0 +1,70 @@
+1. create a repository in GitHub under your login
+2. Go to your laptop, create a directory
+3. Open GitBash and navigate to the directory
+
+rnday@DESKTOP-Q5K8MDU MINGW64 /d
+$ cd AGitRepo-RNDAYALA/
+
+
+$ echo "# TechieSkills" >> README.md
+
+
+$ git init
+Initialized empty Git repository in D:/AGitRepo-RNDAYALA/.git/
+
+
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        README.md
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+
+$ git add README.md
+warning: in the working copy of 'README.md', LF will be replaced by CRLF the next time Git touches it
+
+
+
+$ git config --global user.email "rndayala@gmail.com"
+
+
+$ git config --global user.name "Raghunath D"
+
+
+$  git commit -m "first commit"
+[master (root-commit) 198f1b3] first commit
+ 1 file changed, 1 insertion(+)
+ create mode 100644 README.md
+
+
+$  git branch -M main
+
+
+$ git remote add origin https://github.com/rndayala/TechieSkills.git
+
+$ git push -u origin main
+info: please complete authentication in your browser...
+
+
+$
+
+
+$ git push -u origin main
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 231 bytes | 231.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/rndayala/TechieSkills.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+
+rnday@DESKTOP-Q5K8MDU MINGW64 /d/AGitRepo-RNDAYALA (main)
+$
+
+rnday@DESKTOP-Q5K8MDU MINGW64 /d/AGitRepo-RNDAYALA (main)
+$
