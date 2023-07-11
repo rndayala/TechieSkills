@@ -1,0 +1,23 @@
+Collections Framework
+----------------------
+
+part of java.util package - which includes utility classes that mainly represent 
+sophisticated data structures.
+
+	These data structures are ready to use, highly efficient which we can use
+	right out of the box without having to implement ourselves.
+	
+--> Supports basically "whole collection" of elements.
+
+General requirements which need to be fulfilled by data structures for real world use-cases :
+
+1. No knowledge about size.
+2. Automatically extendable.
+3. Fast random access.
+4. Fast lookups.
+5. Ordered vs Unordered
+6. Duplicate vs Unique
+7. null vs non-null
+8. Automatic sorting
+9. <key, value> mappings.
+
