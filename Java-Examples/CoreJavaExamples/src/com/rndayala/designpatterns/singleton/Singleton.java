@@ -17,6 +17,13 @@ public class Singleton {
 	// a private constructor that ensures that it cannot be instantiated directly from outside the class.
 	private Singleton() {
 		System.out.println("Creating Singleton class object..");
+		
+		// below code is a solution to avoid reflection violation
+		// adding the check inside the private constructor, any attempt to create a new instance 
+		// through reflection will result in an exception, preserving the Singleton pattern's integrity
+		if (instance != null) {
+            throw new RuntimeException("Use getInstance() method to get the single instance.");
+        }
 	}
 	
 	// public static method called getInstance is provided, 
