@@ -10,7 +10,7 @@ package com.rndayala.designpatterns.singleton;
  * Ref : Check my Kindle library
  */
 
-public class Singleton {
+public class Singleton implements Cloneable {
 	// private static variable
 	private static Singleton instance = null;
 	
@@ -36,11 +36,18 @@ public class Singleton {
 		}
 		return instance;
 	}
+	
+	@Override
+    protected Object clone() throws CloneNotSupportedException {
+        return super.clone();
+    }
+	
+	// other methods and fields...
 }
 
 /* Problems :
  * 1. the above implementation is not thread safe.
- * 2. We can still be able to create new objects using Reflection.
+ * 2. We can still be able to create new objects using Reflection - fixed
  * 3. We can be able to create new objects using Cloning.
  * 4. When we do serialization/de-serialization, we get new objects.
 */
