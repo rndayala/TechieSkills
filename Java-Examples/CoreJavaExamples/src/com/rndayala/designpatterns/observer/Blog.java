@@ -1,4 +1,4 @@
-package com.rndayala.designpatterns.observable;
+package com.rndayala.designpatterns.observer;
 
 import java.util.ArrayList;
 import java.util.List;

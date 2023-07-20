@@ -1,4 +1,4 @@
-package com.rndayala.designpatterns.observable;
+package com.rndayala.designpatterns.observer;
 
 public class User implements Observer {
 	private Object article;
