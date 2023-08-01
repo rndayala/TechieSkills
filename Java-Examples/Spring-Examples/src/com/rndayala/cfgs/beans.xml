@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+	<bean id="user" class="com.rndayala.beans.User">
+		<property name="uname" value="John" />
+		<property name="uqual" value="MS" />
+		<property name="uage" value="28" />
+		<property name="uaddr" value="Hyderabad" />
+		<property name="uemail" value="abc@abccompany.com" />
+		<property name="umobile" value="91-1234567890" />
+	</bean>
+</beans>
