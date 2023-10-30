@@ -31,6 +31,7 @@ public class JDBCSave2CSVFileExample {
 				data = data + rs.getString("EADDR") + "\n";
 			}
 			
+			// write to files
 			fos = new FileOutputStream("D:\\AGitRepo-RNDAYALA\\Java-Examples\\emp.txt");
 			byte[] b = data.getBytes();
 			
