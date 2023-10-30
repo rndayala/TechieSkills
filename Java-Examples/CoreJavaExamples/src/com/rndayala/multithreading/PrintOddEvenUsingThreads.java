@@ -2,7 +2,7 @@ package com.rndayala.multithreading;
 
 class PrintOddEvenNumbers implements Runnable {
     
-    String lock = "PrintOddEvenNumbers";
+    String lock = new String();
     private static int i = 1;
     
     public void run() {
