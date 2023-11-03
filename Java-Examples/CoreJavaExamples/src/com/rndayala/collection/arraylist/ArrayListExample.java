@@ -1,4 +1,4 @@
-package com.rndayala.collection.ArrayList;
+package com.rndayala.collection.arraylist;
 
 import java.math.BigInteger;
 import java.time.LocalDate;

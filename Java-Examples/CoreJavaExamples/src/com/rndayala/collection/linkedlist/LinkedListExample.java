@@ -1,4 +1,4 @@
-package com.rndayala.collection.LinkedList;
+package com.rndayala.collection.linkedlist;
 
 import java.util.Arrays;
 import java.util.LinkedList;
@@ -30,6 +30,8 @@ public class LinkedListExample {
 		// uses equals(o, e) method
 		boolean isPresent = list1.contains(null);
 		System.out.println(isPresent);
+		
+		System.out.println(list1.contains(20));
 
 		// finding last occurrence position of element
 		// uses equals() method, if element not found, returns -1
@@ -164,6 +166,7 @@ public class LinkedListExample {
 		System.out.println(list6); // [10, J, 10, Java, 23.5, false]
 		
 		// getFirst() -- returns the first element in the list
+		// these behavior come from Deque interface of LinkedList
 		System.out.println(list6.getFirst());  // 10
 		
 		// getLast() -- returns the last element in the list
@@ -213,15 +216,18 @@ public class LinkedListExample {
 //		removeLastOccurrence(Object o): boolean
 //		Removes the last occurrence of the specified element in this list (when traversing the list from head to tail).
 
+//  	********************************************************
+		
 //		Queue operations in LinkedList :
+		
 //		peek() 
 //		Retrieves, but does not remove, the head (first element) of this list.
 		
 //		peekFirst()
-//		Retrieves, but does not remove, the first element of this list.
+//		Retrieves, but does not remove, the first element of this list. Like getFirst()
 		
 //		peekLast()
-//		Retrieves, but does not remove, the last element of this list
+//		Retrieves, but does not remove, the last element of this list. Like getLast()
 		
 //		poll()
 //		Retrieves and removes the head (first element) of this list.
@@ -233,19 +239,19 @@ public class LinkedListExample {
 //		Retrieves and removes the last element of this list.
 		
 //		push(E e)
-//		Same like addFirst().
+//		Same like addFirst(). inserts the element at the front of this list.
 		
 //		pop(): E
-//		Same like removeFirst()
+//		Same like removeFirst(). removes and returns the first element of this list.
 		
 //		offer(E e): boolean
-//		Same like add(e)
+//		Same like add(e), Adds the specified element as the tail (last element) of this list.
 		
 //		offerFirst(E e): boolean
-//		Same like addFirst(e), introduced in 1.6
+//		Same like addFirst(e), introduced in 1.6. Inserts the specified element at the front of this list.
 		
 //		offerLast(E e): boolean
-//		Same like addLast(e), introduced in 1.6
+//		Same like addLast(e), introduced in 1.6. Inserts the specified element at the end of this list.
 
 	}
 
