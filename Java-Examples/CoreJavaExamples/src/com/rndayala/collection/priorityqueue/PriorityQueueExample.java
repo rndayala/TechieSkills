@@ -36,8 +36,5 @@ public class PriorityQueueExample {
 //		pq.add(null);
 //		
 //		System.out.println(pq);
-		
-		
 	}
-
 }
