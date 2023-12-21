@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<!-- bean definitions here -->
+
+	<bean id="bluedart" class="com.rndayala.springcore.beans.BlueDart">
+		<!-- Configurations and dependencies go here -->
+	</bean>
+	<bean id="firstflight" class="com.rndayala.springcore.beans.FirstFlight"/>
+	<bean id="fedex" class="com.rndayala.springcore.beans.FedEx"/>
+	<bean id="amazon" class="com.rndayala.springcore.beans.Amazon">
+		<!-- injecting objects -->
+		<property ref="fedex" name="service"></property>
+		<constructor-arg ref="bluedart" name="service"></constructor-arg>
+	</bean>
+	
+
+</beans>
